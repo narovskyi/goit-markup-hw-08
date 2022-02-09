@@ -160,9 +160,6 @@ img {
 
 .header__logo {
   color: #000000;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .navigation__link {
@@ -191,13 +188,7 @@ img {
   color: var(--accent-color);
 }
 
-.header-contacts__item:first-child {
-  margin-right: 50px;
-}
-
 .header-contacts__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -228,6 +219,11 @@ img {
 
 .header-contacts__icon--smartphone {
   width: 10px;
+  height: 16px;
+}
+
+.header-contacts__icon--menu {
+  width: 24px;
   height: 16px;
 }
 
@@ -491,7 +487,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 700px;
+  max-width: 700 px;
 }
 
 .hero__button {
@@ -533,17 +529,6 @@ img {
   padding-bottom: var(--section-padding);
 }
 
-.about-us__slogans {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 94px;
-}
-
-.slogans__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .slogans__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -579,30 +564,25 @@ img {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .slogans__title {
+    text-align: center;
+  }
+}
+
 .slogans__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  width: 270px;
 }
 
 .about-us__title {
   margin-bottom: 50px;
 }
 
-.about-us__gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .gallery__item {
   position: relative;
-}
-
-.gallery__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .gallery__item-overlay {
@@ -639,11 +619,6 @@ img {
 }
 
 .our-team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: -15px;
 }
 
@@ -691,15 +666,6 @@ img {
   margin-bottom: 50px;
 }
 
-.regular-customers__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .regular-customers__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -736,9 +702,6 @@ img {
 }
 
 .footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }

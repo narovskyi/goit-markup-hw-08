@@ -9,10 +9,10 @@
   margin-bottom: 50px;
 }
 
-// .regular-customers__list {
-//   display: flex;
-//   justify-content: center;
-// }
+.regular-customers__list {
+  display: flex;
+  justify-content: center;
+}
 
 .regular-customers__item {
   &:not(:last-child) {

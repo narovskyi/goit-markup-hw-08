@@ -15,9 +15,9 @@
 .header__logo {
   color: #000000;
 
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  // margin-right: 93px;
+  // padding-top: 24px;
+  // padding-bottom: 25px;
 }
 
 // .navigation__list {
@@ -73,17 +73,17 @@
 //   margin-left: auto;
 // }
 
-.header-contacts__item {
-  &:first-child {
-    margin-right: 50px;
-  }
-}
+// .header-contacts__item {
+//   &:first-child {
+//     margin-right: 50px;
+//   }
+// }
 
 .header-contacts__link {
   // display: flex;
   // align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -113,6 +113,11 @@
 
   &--smartphone {
     width: 10px;
+    height: 16px;
+  }
+
+  &--menu {
+    width: 24px;
     height: 16px;
   }
 }

@@ -129,9 +129,6 @@ img {
 
 .header__logo {
   color: #000000;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .navigation__link {
@@ -160,13 +157,7 @@ img {
   color: var(--accent-color);
 }
 
-.header-contacts__item:first-child {
-  margin-right: 50px;
-}
-
 .header-contacts__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -197,6 +188,11 @@ img {
 
 .header-contacts__icon--smartphone {
   width: 10px;
+  height: 16px;
+}
+
+.header-contacts__icon--menu {
+  width: 24px;
   height: 16px;
 }
 
@@ -346,9 +342,6 @@ img {
 }
 
 .footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }

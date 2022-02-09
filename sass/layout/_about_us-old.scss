@@ -5,16 +5,16 @@
   }
 }
 
-// .about-us__slogans {
-//   display: flex;
-//   margin-bottom: 94px;
-// }
+.about-us__slogans {
+  display: flex;
+  margin-bottom: 94px;
+}
 
-// .slogans__item {
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
+.slogans__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 
 .slogans__container {
   display: flex;
@@ -45,10 +45,6 @@
   color: var(--secondary-title-color);
 
   margin-bottom: 10px;
-
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
 }
 
 .slogans__text {
@@ -57,23 +53,23 @@
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 
-  // width: 270px;
+  width: 270px;
 }
 
 .about-us__title {
   margin-bottom: 50px;
 }
 
-// .about-us__gallery {
-//   display: flex;
-// }
+.about-us__gallery {
+  display: flex;
+}
 
 .gallery__item {
   position: relative;
 
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .gallery__item-overlay {
