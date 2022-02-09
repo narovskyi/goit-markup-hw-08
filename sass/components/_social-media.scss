@@ -1,0 +1,33 @@
+.social-media__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-media__link {
+  display: block;
+  padding: 12px;
+  border-radius: 50%;
+  color: var(--svg-links-color);
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
+}
+
+.social-media__icon {
+  display: block;
+  fill: currentColor;
+}
