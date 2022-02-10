@@ -1,6 +1,11 @@
 .footer {
   .container {
-    // display: flex;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -16,13 +21,33 @@
       color: #ffffff;
     }
   }
+
+  address {
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
 }
 
 .footer-address__container {
-  margin-right: 70px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
   display: block;
   color: #ffffff;
 
@@ -66,8 +91,22 @@
 }
 
 .footer__social-media {
-  padding-top: 12px;
-  margin-right: 93px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+    margin-right: 93px;
+  }
 }
 
 .social-media__slogan {
@@ -82,10 +121,22 @@
 }
 
 .footer__subscribe-form {
-  padding-top: 12px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .subscribe-form__slogan {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -98,11 +149,22 @@
 }
 
 .subscribe-form__email-input {
-  margin-right: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  width: 358px;
   height: 50px;
 
   font-size: 16px;
