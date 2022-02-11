@@ -17,93 +17,117 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="navigation">
-                <!--header-navigation-->
+            <div class="mobile-menu__container">
                 <a href="./index.html" class="link logo header__logo" lang="en"><span
                         class="logo__part">Web</span>Studio</a>
-                <!-- <a>header-logo logo link      span logo-part -->
-                <ul class="list navigation__list">
-                    <!--header-list list-->
-                    <li class="navigation__item">
-                        <!-- header-list-item -->
-                        <a class="link navigation__link" href="./index.html">Студия</a>
-                        <!-- header-list-link link active -->
-                    </li>
-                    <li class="navigation__item">
-                        <a class="link navigation__link navigation__link--active" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="link navigation__link" href="">Контакты </a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="list header-contacts__list">
-                <!-- header-contacts list -->
-                <li class="header-contacts__item">
-                    <!-- header-contacts-item -->
-                    <a class="link header-contacts__link" href="mailto:info@devstudio.com">
-                        <!-- header-contacts-link link -->
-                        <svg class="header-contacts__icon header-contacts__icon--envelope">
-                            <!-- icon-envelope -->
-                            <use href="./images/icons.svg#icon-envelope">
-                            </use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="header-contacts__item">
-                    <a class="link header-contacts__link" href="tel:+380961111111">
-                        <svg class="header-contacts__icon header-contacts__icon--smartphone">
-                            <!-- icon-smartphone -->
-                            <use href="./images/icons.svg#icon-smartphone">
-                            </use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+                <button class="button header-menu__button" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg class="header-menu__icon" aria-label="Переключатель мобильного меню">
+                        <use class="header-menu__icon--cross" href="./images/icons.svg#icon-cross">
+                        </use>
+                        <use class="header-menu__icon--menu" href="./images/icons.svg#icon-menu">
+                        </use>
+                    </svg>
+                </button>
+                <div class="mobile-menu" id="menu-container" data-menu>
+                    <div class="navigation-container">
+                        <nav class="navigation">
+                            <ul class="list navigation__list">
+                                <li class="navigation__item">
+                                    <a class="link navigation__link" href="./index.html">Студия</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="link navigation__link navigation__link--active" href="./portfolio.html">Портфолио</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="link navigation__link" href="">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="list header-contacts__list">
+                            <li class="header-contacts__item">
+                                <a class="link header-contacts__link header-contacts__link--email"
+                                    href="mailto:info@devstudio.com">
+                                    <svg class="header-contacts__icon header-contacts__icon--envelope">
+                                        <use href="./images/icons.svg#icon-envelope">
+                                        </use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="header-contacts__item">
+                                <a class="link header-contacts__link header-contacts__link--tel" href="tel:+380961111111">
+                                    <svg class="header-contacts__icon header-contacts__icon--smartphone">
+                                        <use href="./images/icons.svg#icon-smartphone">
+                                        </use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list mobile-social-media__list">
+                            <li class="mobile-social-media__item">
+                                <a class="link mobile-social-media__link" href="">Instagram</a>
+                            </li>
+                            <li class="mobile-social-media__item">
+                                <a class="link mobile-social-media__link" href="">Twitter</a>
+                            </li>
+                            <li class="mobile-social-media__item">
+                                <a class="link mobile-social-media__link" href="">Facebook</a>
+                            </li>
+                            <li class="mobile-social-media__item">
+                                <a class="link mobile-social-media__link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <section class="section portfolio__section">
-            <!-- portfolio -->
             <div class="container">
                 <ul class="list portfolio__buttons-list">
-                    <!-- portfolio-buttons-list list -->
                     <li class="portfolio__buttons-item"><button class="button portfolio__button" type="button">Все</button></li>
-                    <!-- portfolio-buttons-item --><!-- portfolio-button btn -->
                     <li class="portfolio__buttons-item"><button class="button portfolio__button" type="button">Веб-сайты</button></li>
                     <li class="portfolio__buttons-item"><button class="button portfolio__button" type="button">Приложения</button></li>
                     <li class="portfolio__buttons-item"><button class="button portfolio__button" type="button">Дизайн</button></li>
                     <li class="portfolio__buttons-item"><button class="button portfolio__button" type="button">Маркетинг</button></li>
                 </ul>
                 <ul class="list porfolio__project-list">
-                    <!-- porfolio-project-list list -->
                     <li class="portfolio__project-item portfolio__web-site">
-                        <!-- portfolio-project-item portfolio-web-site -->
                         <div class="portfolio__img-container">
-                            <!-- portfolio-img-container -->
-                            <img src="./images/portfolio/web-site-img1.jpg" alt="" width="370px" height="294px">
+                            <img
+                            srcset="
+                            ./images/portfolio/project1-450.jpg 1x,
+                            ./images/portfolio/project1-450@2x.jpg 2x
+                            "
+
+                            src="./images/portfolio/img1-450.jpg"
+                            height="294px"
+                            >
                             <div class="portfolio__overlay">
-                                <!-- portfolio-overlay-container -->
                                 <p class="overlay__description">Технокряк это современная площадка распространения коронавируса. Компании
                                     используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
-                                    <!-- porfolio-overlay-description -->
                             </div>
                         </div>
                         <div class="portfolio__description-container">
-                            <!-- portfolio-description-container -->
                             <p class="porfolio__project-title">Технокряк</p>
-                            <!-- porfolio-project-title -->
                             <p class="porfolio__project-description">Веб-сайт</p>
-                            <!-- porfolio-project-description -->
                         </div>
                     </li>
                     <li class="portfolio__project-item portfolio__design">
-                        <!-- portfolio-design -->
                         <div class="portfolio__img-container">
-                            <img src="./images/portfolio/design-img1.jpg" alt="" width="370px" height="294px">
+                            <img
+                            srcset="
+                            ./images/portfolio/project2-450.jpg 1x,
+                            ./images/portfolio/project2-450@2x.jpg 2x
+                            "
+
+                            src="./images/portfolio/img2-450.jpg"
+                            height="294px"
+                            >
                             <div class="portfolio__overlay">
                                 <p class="overlay__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании
@@ -117,9 +141,16 @@
                         </div>
                     </li>
                     <li class="portfolio__project-item portfolio__app">
-                        <!-- portfolio-app -->
                         <div class="portfolio__img-container">
-                            <img src="./images/portfolio/app-img1.jpg" alt="" width="370px" height="294px">
+                            <img
+                            srcset="
+                            ./images/portfolio/project3-450.jpg 1x,
+                            ./images/portfolio/project3-450@2x.jpg 2x
+                            "
+
+                            src="./images/portfolio/img3-450.jpg"
+                            height="294px"
+                            >
                             <div class="portfolio__overlay">
                                 <p class="overlay__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании
@@ -133,9 +164,16 @@
                         </div>
                     </li>
                     <li class="portfolio__project-item portfoliomarketing">
-                        <!-- portfolio-marketing -->
                         <div class="portfolio__img-container">
-                            <img src="./images/portfolio/marketing-img1.jpg" alt="" width="370px" height="294px">
+                            <img
+                            srcset="
+                            ./images/portfolio/project4-450.jpg 1x,
+                            ./images/portfolio/project4-450@2x.jpg 2x
+                            "
+
+                            src="./images/portfolio/img4-450.jpg"
+                            height="294px"
+                            >
                             <div class="portfolio__overlay">
                                 <p class="overlay__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании
@@ -149,9 +187,16 @@
                         </div>
                     </li>
                     <li class="portfolio__project-item portfolio__app">
-                        <!-- portfolio-app -->
                         <div class="portfolio__img-container">
-                            <img src="./images/portfolio/app-img2.jpg" alt="" width="370px" height="294px">
+                            <img
+                            srcset="
+                            ./images/portfolio/project5-450.jpg 1x,
+                            ./images/portfolio/project5-450@2x.jpg 2x
+                            "
+
+                            src="./images/portfolio/img5-450.jpg"
+                            height="294px"
+                            >
                             <div class="portfolio__overlay">
                                 <p class="overlay__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании
@@ -166,7 +211,15 @@
                     </li>
                     <li class="portfolio__project-item portfolio__web-site">
                         <div class="portfolio__img-container">
-                            <img src="./images/portfolio/web-site-img2.jpg" alt="" width="370px" height="294px">
+                            <img
+                            srcset="
+                            ./images/portfolio/project6-450.jpg 1x,
+                            ./images/portfolio/project6-450@2x.jpg 2x
+                            "
+
+                            src="./images/portfolio/img6-450.jpg"
+                            height="294px"
+                            >
                             <div class="portfolio__overlay">
                                 <p class="overlay__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании
@@ -181,7 +234,15 @@
                     </li>
                     <li class="portfolio__project-item portfolio__design">
                         <div class="portfolio__img-container">
-                            <img src="./images/portfolio/design-img2.jpg" alt="" width="370px" height="294px">
+                            <img
+                            srcset="
+                            ./images/portfolio/project7-450.jpg 1x,
+                            ./images/portfolio/project7-450@2x.jpg 2x
+                            "
+
+                            src="./images/portfolio/img7-450.jpg"
+                            height="294px"
+                            >
                             <div class="portfolio__overlay">
                                 <p class="overlay__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании
@@ -195,9 +256,16 @@
                         </div>
                     </li>
                     <li class="portfolio__project-item portfoliomarketing">
-                        <!-- portfolio-marketing -->
                         <div class="portfolio__img-container">
-                            <img src="./images/portfolio/marketing-img2.jpg" alt="" width="370px" height="294px">
+                            <img
+                            srcset="
+                            ./images/portfolio/project8-450.jpg 1x,
+                            ./images/portfolio/project8-450@2x.jpg 2x
+                            "
+
+                            src="./images/portfolio/img8-450.jpg"
+                            height="294px"
+                            >
                             <div class="portfolio__overlay">
                                 <p class="overlay__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании
@@ -211,9 +279,16 @@
                         </div>
                     </li>
                     <li class="portfolio__project-item portfolio__app">
-                        <!-- portfolio-app -->
                         <div class="portfolio__img-container">
-                            <img src="./images/portfolio/app-img3.jpg" alt="" width="370px" height="294px">
+                            <img
+                            srcset="
+                            ./images/portfolio/project9-450.jpg 1x,
+                            ./images/portfolio/project9-450@2x.jpg 2x
+                            "
+
+                            src="./images/portfolio/img9-450.jpg"
+                            height="294px"
+                            >
                             <div class="portfolio__overlay">
                                 <p class="overlay__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании
@@ -233,20 +308,13 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-address__container">
-                <!-- footer-address-container -->
                 <a class="link logo footer__logo" href=""><span class="logo__part">Web</span>Studio</a>
-                <!-- footer-logo logo link -->
-                <!-- logo__part -->
                 <address>
                     <a class="link footer__address" href="https://goo.gl/maps/7YSqPKQ64aGsCX99A" target="_blank"
                         rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
-                    <!-- footer-address link -->
                     <ul class="list footer-contacts__list">
-                        <!-- footer-contacts-list list -->
                         <li class="footer-contacts__item">
-                            <!-- footer-contacts-item -->
                             <a class="link footer-contacts__link" href="mailto:info@example.com">info@example.com</a>
-                            <!-- footer-contacts-link link -->
                         </li>
                         <li class="footer-contacts__item">
                             <a class="link footer-contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
@@ -255,17 +323,11 @@
                 </address>
             </div>
             <div class="footer__social-media">
-                <!-- footer-social-links-container -->
                 <p class="social-media__slogan">Присоединяйтесь</p>
-                <!-- footer-social-links-text -->
                 <ul class="list social-media__list">
-                    <!-- social-links-list list -->
                     <li class="social-media__item">
-                        <!-- social-links-item -->
                         <a class="link social-media__link" href="">
-                            <!-- social-links-link link -->
                             <svg class="social-media__icon" width="20px" height="20px">
-                                <!-- social-links-icon -->
                                 <use href="./images/icons.svg#icon-instagram">
                                 </use>
                             </svg>
@@ -298,19 +360,13 @@
                 </ul>
             </div>
             <form class="footer__subscribe-form">
-                <!-- footer-form-container -->
                 <label class="subscribe-form__label">
-                    <!-- footer-subscribe-label -->
                     <span class="subscribe-form__slogan">Подпишитесь на рассылку</span>
-                    <!-- footer-subscribe-slogan -->
                     <input class="subscribe-form__email-input" type="email" name="email" placeholder="E-mail" />
-                    <!-- footer-subscribe-field -->
                 </label>
                 <button class="button subscribe-form__button" type="submit">
-                    <!-- footer-subscribe-button btn -->
                     <span>Подписаться</span>
                     <svg class="subscribe-form__icon" width="24px" height="24px">
-                        <!-- footer-subscribe-icon -->
                         <use href="./images/icons.svg#icon-send">
                         </use>
                     </svg>
@@ -318,5 +374,6 @@
             </form>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

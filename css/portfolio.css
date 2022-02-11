@@ -205,6 +205,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
     padding: 48px 40px;
     background-color: #ffffff;
@@ -521,9 +522,18 @@ img {
   color: var(--accent-color);
 }
 
-.portfolio__section .container {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+@media screen and (max-width: 1199px) {
+  .portfolio__section .container {
+    padding-top: var(--mobile-section-padding);
+    padding-bottom: var(--mobile-section-padding);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__section .container {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+  }
 }
 
 .portfolio__buttons-list {
@@ -532,10 +542,33 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__buttons-list {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__buttons-list {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__buttons-list {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__buttons-item {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio__buttons-item:not(:last-child) {
@@ -571,13 +604,23 @@ img {
 }
 
 .porfolio__project-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: -15px;
 }
 
+@media screen and (max-width: 767px) {
+  .porfolio__project-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .portfolio__project-item {
-  -ms-flex-preferred-size: calc(100% / 3 - 30px);
-      flex-basis: calc(100% / 3 - 30px);
-  margin: 15px;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -586,6 +629,35 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__project-item {
+    max-width: 450px;
+    height: 404px;
+  }
+  .portfolio__project-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__project-item {
+    max-width: 354px;
+    height: 440px;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__project-item {
+    max-width: 370px;
+    height: 428px;
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .portfolio__project-item:hover, .portfolio__project-item:focus {
@@ -598,12 +670,17 @@ img {
   overflow: hidden;
 }
 
+.portfolio__img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .portfolio__overlay {
   position: absolute;
   top: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  width: 370px;
+  width: 450px;
   height: 294px;
   padding-left: 24px;
   padding-right: 24px;
@@ -618,6 +695,12 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__overlay {
+    width: 370px;
+  }
 }
 
 .portfolio__project-item:hover .portfolio__overlay {
@@ -641,6 +724,12 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__description-container {
+    height: 146px;
+  }
 }
 
 .porfolio__project-title {
