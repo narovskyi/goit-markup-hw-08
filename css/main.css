@@ -201,6 +201,36 @@ body.menu-open {
   }
 }
 
+.header .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 479px) {
+  .header .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .container {
+    width: 1200px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .mobile-menu__container {
     display: -webkit-box;
@@ -1208,6 +1238,36 @@ body.menu-open {
   }
 }
 
+.our-team__section .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 479px) {
+  .our-team__section .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .our-team__section .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__section .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__section .container {
+    width: 1200px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .our-team__title {
     margin-bottom: 30px;
@@ -1438,16 +1498,32 @@ body.menu-open {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--main-background-color);
 }
 
 .footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 479px) {
+  .footer .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .footer .container {
+    width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1456,6 +1532,12 @@ body.menu-open {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    width: 1200px;
   }
 }
 

@@ -1,13 +1,30 @@
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+
     @media screen and (min-width: 768px) {
+      width: 768px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
 
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
 
   background-color: var(--main-background-color);
