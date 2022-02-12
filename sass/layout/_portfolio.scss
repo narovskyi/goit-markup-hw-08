@@ -1,13 +1,11 @@
 .portfolio__section {
-  .container {
-    @media screen and (max-width: 1199px) {
-      padding-top: var(--mobile-section-padding);
-      padding-bottom: var(--mobile-section-padding);
-    }
-    @media screen and (min-width: 1200px) {
-      padding-top: var(--section-padding);
-      padding-bottom: var(--section-padding);
-    }
+  @media screen and (max-width: 1199px) {
+    padding-top: var(--mobile-section-padding);
+    padding-bottom: var(--mobile-section-padding);
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
   }
 }
 
@@ -16,7 +14,7 @@
   flex-wrap: wrap;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 
   @media screen and (min-width: 768px) {
@@ -67,17 +65,19 @@
 .porfolio__project-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
 
   @media screen and (max-width: 767px) {
     justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: -15px;
   }
 }
 
 .portfolio__project-item {
   @media screen and (max-width: 767px) {
     max-width: 450px;
-    height: 404px;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -85,14 +85,12 @@
 
   @media screen and (min-width: 768px) {
     max-width: 354px;
-    height: 440px;
     flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 370px;
-    height: 428px;
     flex-basis: calc(100% / 3 - 30px);
   }
 

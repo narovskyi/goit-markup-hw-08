@@ -6,7 +6,11 @@
 //   margin: 0 auto;
 // }
 
-.container {
+body.menu-open {
+  overflow: hidden;
+}
+
+.section {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;

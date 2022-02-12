@@ -43,32 +43,36 @@ img {
   text-decoration: none;
 }
 
-.container {
+body.menu-open {
+  overflow: hidden;
+}
+
+.section {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 479px) {
-  .container {
+  .section {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .section {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .section {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .section {
     width: 1200px;
   }
 }
@@ -202,7 +206,7 @@ img {
 @media screen and (max-width: 767px) {
   .mobile-menu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
@@ -523,14 +527,14 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .portfolio__section .container {
+  .portfolio__section {
     padding-top: var(--mobile-section-padding);
     padding-bottom: var(--mobile-section-padding);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio__section .container {
+  .portfolio__section {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
   }
@@ -546,7 +550,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .portfolio__buttons-list {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 }
 
@@ -609,7 +613,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -617,6 +620,12 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .porfolio__project-list {
+    margin: -15px;
   }
 }
 
@@ -634,7 +643,6 @@ img {
 @media screen and (max-width: 767px) {
   .portfolio__project-item {
     max-width: 450px;
-    height: 404px;
   }
   .portfolio__project-item:not(:last-child) {
     margin-bottom: 30px;
@@ -644,7 +652,6 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio__project-item {
     max-width: 354px;
-    height: 440px;
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
@@ -654,7 +661,6 @@ img {
 @media screen and (min-width: 1200px) {
   .portfolio__project-item {
     max-width: 370px;
-    height: 428px;
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
   }
@@ -792,7 +798,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-address__container {
     margin-right: 165px;
     margin-bottom: 60px;
