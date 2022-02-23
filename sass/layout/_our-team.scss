@@ -10,28 +10,6 @@
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
   }
-
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-
-    @media screen and (max-width: 479px) {
-      width: 100%;
-    }
-
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-    }
-  }
 }
 
 .our-team__title {
@@ -54,20 +32,19 @@
 
 .our-team__item {
   @media screen and (max-width: 767px) {
-    max-width: 450px;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 354px;
+    // max-width: 354px;
     flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 270px;
+    // max-width: 270px;
     flex-basis: calc(100% / 4 - 30px);
   }
 

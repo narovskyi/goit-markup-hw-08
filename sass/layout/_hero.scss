@@ -74,7 +74,11 @@
   background-position: center;
 
   .container {
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 386px) {
+      padding-top: 100px;
+    }
+
+    @media screen and (min-width: 387px) {
       padding-top: 118px;
       padding-bottom: 118px;
     }
@@ -87,7 +91,13 @@
 }
 
 .hero__title {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 479px) {
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 480px) {
     font-size: 26px;
     line-height: 1.62;
     max-width: 360px;
